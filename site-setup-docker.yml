@@ -1,0 +1,10 @@
+#
+#
+#
+---
+- hosts: docker-machine
+  sudo: yes
+
+  roles:
+  -  docker.ubuntu
+

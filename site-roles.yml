@@ -1,0 +1,15 @@
+#
+#
+#
+---
+- hosts: localhost
+  sudo: yes
+
+  vars: 
+    -  workingdir: /home/vmware/misc-docker/roles/docker.ubuntu
+
+  tasks:
+    -  git: repo=https://github.com/angstwad/docker.ubuntu.git
+         dest={{workingdir}}
+
+
